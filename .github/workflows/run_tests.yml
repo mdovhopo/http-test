@@ -1,0 +1,17 @@
+name: Clojure CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: echo "installing deps stub"
+    - name: Run tests stub
+      run: echo "No tests in here..... yet" && exit 1
